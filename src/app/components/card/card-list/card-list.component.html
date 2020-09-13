@@ -1,0 +1,22 @@
+<mat-grid-list cols="4" rowHeight="1000px">
+  <mat-grid-tile
+    *ngFor="let card of cards">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{card.title}}</mat-card-title>
+        <mat-card-subtitle>{{card.short_url}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{card.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="https://google.com"><button mat-button>REDIRECT</button></a>
+        <button mat-button [cdkCopyToClipboard]=card.original_url>COPY LINK TO CLIPBOARD</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

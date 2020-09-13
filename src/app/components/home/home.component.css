@@ -1,0 +1,42 @@
+body{
+  background-image: url('/Users/abhay/IdeaProjects/digital-org-ui/src/assets/images/blue-p.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+header{
+  padding-top: 10vh;
+  font-size: 6vw;
+  font-family: Calibri;
+  color: honeydew;
+}
+h1{
+  padding-top: 20vh;
+  font-size: 5vw;
+  font-family: Calibri;
+  color: honeydew;
+}
+section {
+  padding-top: 5vh;
+}
+
+.example-button-row {
+  padding-top: 5vh;
+  display: table-cell;
+  width: 5000px;
+  height: 25vh;
+}
+button{
+  width: 10vw!important;
+  height: 2vw;
+  min-width: 4vw;
+  min-height: 1vh;
+  font-family: Calibri;
+  font-size: 1vw;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}

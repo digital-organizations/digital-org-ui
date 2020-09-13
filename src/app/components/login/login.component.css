@@ -1,0 +1,85 @@
+.main-div{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:30vh;
+
+}
+.example-card{
+  max-width: 50vw;
+  width: 30vw;
+}
+.formfill{
+  justify-content: center;
+}
+.example-container{
+  padding-top: 3vw;
+}
+
+mat-card-header{
+  background-color: #3f51b5;
+  color: white;
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+}
+input{
+  height: 3vh;
+}
+.mat-form-field{
+  max-width: 200%;
+  width: 100%;
+}
+
+mat-card-title{
+  padding-top: 1vw;
+  padding-left: 5vw;
+  text-align: center;
+  font-size: 1vw!important;
+}
+
+mat-card-subtitle{
+  color: white;
+  padding-top: 0.5vw;
+  text-align: center;
+  padding-left: 5vw;
+}
+
+.example-button-row {
+  padding-top: 5vh;
+  display: table-cell;
+  width: 5000px;
+  height: 25vh;
+}
+#login {
+  width: 5vw!important;
+  height: 2.5vw;
+  min-width: 4vw;
+  min-height: 1vh;
+  /*transform: scale(1.2);*/
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+  /*font-size: 0.7vw;*/
+  font-weight: lighter;
+}
+#signup {
+  width: 5vw!important;
+  height: 2.5vw;
+  min-width: 4vw;
+  min-height: 1vh;
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+  /*font-size: 0.7vw;*/
+  font-weight: lighter;
+}
+#github {
+  width: 7vw!important;
+  height: 2.5vw;
+  margin-left: 2.15vw;
+  min-width: 4vw;
+  min-height: 1vh;
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+  /*font-size: 0.7vw;*/
+  font-weight: lighter;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
