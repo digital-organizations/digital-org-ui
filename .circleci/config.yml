@@ -10,7 +10,7 @@ jobs:
           key: digital-org-ui-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npm install
       - save_cache:
-          key: digital-org-ui-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: digital-org-ui-{{ .Revision }}-{{ checksum "package-lock.json" }}
           paths:
             - "node_modules"
       - run: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
