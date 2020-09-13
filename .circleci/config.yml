@@ -1,8 +1,8 @@
 version: 2
 
 jobs:
-  # The test job
-  test:
+  # The build job
+  build:
     working_directory: ~/digital-org-ui
     docker:
       - image: circleci/node:10-browsers
@@ -27,10 +27,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-      # Lint the source code
-      - run:
-          name: Linting
-          command: npm run lint
+          # Lint the source code
+          #- run:
+          #name: Linting
+          #command: npm run lint
       # Test the source code
       - run:
           name: Testing
@@ -39,3 +39,8 @@ jobs:
       - run:
           name: End to End Test
           command: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+          # Build the project. Currently have only one configuration
+          #- run:
+          #name: Building
+          #command: npm run build
+
