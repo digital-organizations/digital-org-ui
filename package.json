@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~0.1001.0",
     "@angular/cli": "~10.1.0",
     "@angular/compiler-cli": "~10.1.0",
     "@angular/animations": "~10.1.0",
@@ -27,12 +28,7 @@
     "json-server": "^0.16.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.0",
-    "@angular/cli": "~10.1.0",
-    "@angular/compiler-cli": "~10.1.0",
+    "zone.js": "~0.10.2",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -48,5 +44,8 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
+  },
+  "devDependencies": {
+    
   }
 }
