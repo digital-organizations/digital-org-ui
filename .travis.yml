@@ -9,7 +9,8 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-  - ng build --prod --base-href https://digital-org.github.io/digital-org-ui/
+  - ng build
+  - ng serve
 deploy:
   provider: pages
   skip_cleanup: true
