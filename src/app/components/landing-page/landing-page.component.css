@@ -1,0 +1,29 @@
+body{
+  background-image: url("src\assets\images\blue-p.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+header{
+  padding-top: 10vh;
+  font-size: 6vw;
+  font-family: Calibri;
+  color: honeydew;
+}
+h1{
+  padding-top: 20vh;
+  font-size: 5vw;
+  font-family: Calibri;
+  color: honeydew;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+button{
+
+}
+.form-component{
+  margin-top: 10vh;
+}

@@ -1,0 +1,37 @@
+<table mat-table [dataSource]="suggestions" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="card_id">
+    <th mat-header-cell *matHeaderCellDef>Card ID</th>
+    <td mat-cell *matCellDef="let element"> {{element.card_id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="suggested_date">
+    <th mat-header-cell *matHeaderCellDef  mat-sort-header> Suggested Date </th>
+    <td mat-cell *matCellDef="let element"> {{element.suggested_date}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="suggestion_text">
+    <th mat-header-cell *matHeaderCellDef> Suggestion Text </th>
+    <td mat-cell *matCellDef="let element"> {{element.suggestion_text}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete_suggestion">
+    <th mat-header-cell *matHeaderCellDef>Delete</th>
+    <td mat-cell *matCellDef="let element"><button mat-raised-button class="mat-primary" routerLink="/home/card/listSuggestion" (click)="delete(element.id)"><fa-icon [icon]="['fas','trash']"></fa-icon></button> </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

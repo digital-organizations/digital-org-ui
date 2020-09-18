@@ -1,0 +1,42 @@
+<div class="main-div">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Add card to group form</mat-card-title>
+      <mat-card-subtitle>Fill below details to add a card in group</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <h4>Select the group</h4>
+      <mat-form-field appearance="fill" required>
+        <mat-label>Group</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let group of groups" [value]="group.id" (onSelectionChange)="setGroup(group.id)">
+            {{group.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <h4>Select the Cards</h4>
+      <mat-form-field appearance="fill" required>
+        <mat-label>Card</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let card of cards" [value]="card.id" (onSelectionChange)="setCard(card.id)">
+            {{card.title}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <section>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
+          <button mat-raised-button type="submit" routerLink="/home/group">Close</button>
+          <!--<mat-spinner disabled="!matspinner"></mat-spinner>-->
+        </div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+
+
+

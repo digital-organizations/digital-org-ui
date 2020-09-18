@@ -1,0 +1,22 @@
+
+<body>
+<header>Welcome to Wholesale banking</header>
+<h1>Go Digital </h1>
+<div class="form-component">
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    <div class="example-container">
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Enter your email</mat-label>
+        <input matInput type="email" [(ngModel)]="emaillocal" name="email" required email>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <button mat-raised-button [disabled]="!f.valid" class="button-field"><fa-icon [icon]="['fas','arrow-circle-right']"></fa-icon></button>
+    </div>
+  </form>
+</div>
+
+</body>
+
+
+
+

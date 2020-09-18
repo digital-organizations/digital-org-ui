@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Share short url</h1>
+<div mat-dialog-content>
+  <label for="clipboard-example-textarea">Text to be copied</label>
+  <textarea id="clipboard-example-textarea" cols="30" rows="10" [(ngModel)]=short_url disabled></textarea>
+  <button [cdkCopyToClipboard]=short_url>Copy to clipboard</button>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="close()">Close</button>
+</div>

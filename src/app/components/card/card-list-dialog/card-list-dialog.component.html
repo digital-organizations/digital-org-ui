@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Edit card details</h1>
+<div mat-dialog-content>
+  <input type="file" (change)="onFileSelect($event)"/>
+  <button mat-button color="primary" class="upload" (click)="onUpload()"><fa-icon [icon]="['fas','upload']"></fa-icon></button>
+  <button mat-raised-button (click)="openDialog()">Update card details</button>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="close()">Close</button>
+</div>

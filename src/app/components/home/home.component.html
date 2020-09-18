@@ -1,0 +1,17 @@
+
+<nav mat-tab-nav-bar>
+  <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)="home()">
+    <mat-icon>home</mat-icon>
+  </button>
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.link"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">{{link.label}}
+  </a>
+  <div class="example-button-row">
+    <button mat-raised-button class="email">{{emailGlobal}}</button>
+    <button mat-raised-button class="logout" (click)="logout()"><fa-icon [icon]="['fas','sign-out-alt']"></fa-icon></button>
+  </div>
+</nav>
+<router-outlet></router-outlet>

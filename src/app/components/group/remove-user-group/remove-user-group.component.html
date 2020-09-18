@@ -1,0 +1,29 @@
+<div class="main-div">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Remove user from group form</mat-card-title>
+      <mat-card-subtitle>Fill below details to remove user from group</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <h4>Select the group</h4>
+      <mat-form-field appearance="fill" required>
+        <mat-label>Group</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let group of groups" [value]="group.id" (onSelectionChange)="setGroup(group.id)">
+            {{group.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>User Email</mat-label>
+        <input matInput [(ngModel)]="userEmail" email required>
+      </mat-form-field>
+      <div class="example-button-row">
+        <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
+        <button mat-raised-button type="submit" routerLink="/home/group">Close</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+

@@ -1,0 +1,36 @@
+.example-card {
+}
+
+.example-header-image {
+}
+mat-card-header{
+  position: inherit;
+  background-color: #3f51b5;
+  color:white;
+}
+.title{
+  width: 500vw;
+  text-align: left;
+}
+.edit{
+  float: right;
+}
+.trash{
+  float: right;
+}
+mat-card{
+  width:400px;
+  max-width: available !important;
+  height: auto;
+  border-color: black !important;
+  border-style: solid !important;
+}
+#add{
+  margin-top: 2vh;
+  margin-left: 10px;
+  height: 5vh;
+  width: 10vw;
+}
+.mat-grid-tile .mat-figure{
+  height: 300px;
+}

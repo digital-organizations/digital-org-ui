@@ -1,0 +1,82 @@
+<div class="main-div">
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Card Form</mat-card-title>
+    <mat-card-subtitle>Fill below details to create a card</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class = "formfill">
+      <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="title">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Description</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="description">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Original_url</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="original_url">
+            <mat-hint>Follow valid url format Eg: http://www.google.com </mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Expire_date</mat-label>
+            <input matInput [matDatepicker]="expiry_picker" formControlName="expire_date">
+            <mat-datepicker-toggle matSuffix [for]="expiry_picker"></mat-datepicker-toggle>
+            <mat-datepicker #expiry_picker></mat-datepicker>
+          </mat-form-field>
+        </p>
+        <p>
+          <input ngModel={{emailGlobal}} formControlName="updated_by" hidden>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Team</mat-label>
+            <input  matInput placeholder="Placeholder" formControlName="team">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Tribe</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="tribe">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Component</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="component">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field appearance="filled">
+            <input  matInput ngModel={{emailGlobal}}  formControlName="created_by" hidden>
+          </mat-form-field>
+        <p>
+        <section>
+          <div class="example-button-row">
+              <button mat-raised-button color="primary" type="submit">Submit</button>
+              <button mat-raised-button type="submit" routerLink="/home/card">Close</button>
+              <!--<mat-spinner disabled="!matspinner"></mat-spinner>-->
+          </div>
+        </section>
+
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>
+
+
+
+
+

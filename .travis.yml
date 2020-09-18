@@ -9,8 +9,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-  - ng build
-  - ng serve
+  - ng build --prod
 deploy:
   provider: pages
   skip_cleanup: true
