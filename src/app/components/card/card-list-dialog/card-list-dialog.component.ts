@@ -15,7 +15,7 @@ export class CardListDialogComponent implements OnInit {
   email: string;
   selectedFile;
   message: string;
-  private uploadUrl = 'https://digital-org.herokuapp.com//card/upload/';
+  private uploadUrl = 'https://digital-org.herokuapp.com/card/upload/';
 
 
   constructor(

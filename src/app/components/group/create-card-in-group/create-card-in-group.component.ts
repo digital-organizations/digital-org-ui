@@ -18,9 +18,9 @@ export class CreateCardInGroupComponent implements OnInit {
   selectedFile: File;
   message: string;
   emailGlobal: string;
-  displayCardsUrl='https://digital-org.herokuapp.com//card/all/admin';
-  displayGroupUrl='https://digital-org.herokuapp.com//group/all/admin/';
-  submitUrl='https://digital-org.herokuapp.com//group/add-card-to-group/';
+  displayCardsUrl='https://digital-org.herokuapp.com/card/all/admin';
+  displayGroupUrl='https://digital-org.herokuapp.com/group/all/admin/';
+  submitUrl='https://digital-org.herokuapp.com/group/add-card-to-group/';
 
   cards:Card[];
   groups:Group[];

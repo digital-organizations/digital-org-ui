@@ -18,9 +18,9 @@ export class DeleteCardFromGroupComponent implements OnInit {
   selectedFile: File;
   message: string;
   emailGlobal: string;
-  displayCardsUrl='https://digital-org.herokuapp.com//card/all/admin';
-  displayGroupUrl='https://digital-org.herokuapp.com//group/all/admin/';
-  submitUrl='https://digital-org.herokuapp.com//group/remove-card-from-group';
+  displayCardsUrl='https://digital-org.herokuapp.com/card/all/admin';
+  displayGroupUrl='https://digital-org.herokuapp.com/group/all/admin/';
+  submitUrl='https://digital-org.herokuapp.com/group/remove-card-from-group';
   cards:Card[];
   groups:Group[];
   card_id:number;

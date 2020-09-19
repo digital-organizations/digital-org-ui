@@ -18,8 +18,8 @@ export class RemoveUserGroupComponent implements OnInit {
   userEmail: string;
   emailGlobal:string;
   finalUrl:string;
-  displayGroupUrl = 'https://digital-org.herokuapp.com//group/all/admin/';
-  submitUrl = 'https://digital-org.herokuapp.com//group/user-from-group?groupId=';
+  displayGroupUrl = 'http://localhost:8081/group/all/admin/';
+  submitUrl = 'http://localhost:8081/group/remove-user-from-group';
 
   groups: Group[];
   group_id: number;

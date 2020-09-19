@@ -16,7 +16,7 @@ export class ShareUrlComponent implements OnInit {
               private httpClient: HttpClient,
               public dialog: MatDialog,
               @Inject(MAT_DIALOG_DATA) data) {
-    this.short_url = 'https://digital-org.herokuapp.com//url/' + data;
+    this.short_url = 'https://digital-org.herokuapp.com/url/' + data;
     console.log(this.short_url);
 
   }

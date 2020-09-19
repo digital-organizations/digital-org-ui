@@ -10,7 +10,7 @@ describe('RemoveUserGroupComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ RemoveUserGroupComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

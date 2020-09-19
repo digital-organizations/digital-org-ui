@@ -15,9 +15,9 @@ export class CardServiceService {
 
   constructor(private http: HttpClient,
               private dataService: DataService) {
-    this.getcardsUrl = 'https://digital-org.herokuapp.com//card/all/';
-    this.postcardsUrl = 'https://digital-org.herokuapp.com//card/create';
-    this.updatecardsUrl = 'https://digital-org.herokuapp.com//card/update';
+    this.getcardsUrl = 'https://digital-org.herokuapp.com/card/all/';
+    this.postcardsUrl = 'https://digital-org.herokuapp.com/card/create';
+    this.updatecardsUrl = 'https://digital-org.herokuapp.com/card/update';
   }
 
   // tslint:disable-next-line:typedef

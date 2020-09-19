@@ -24,7 +24,7 @@ export class CardListComponent implements OnInit {
   retrievedImage: any;
   base64Data: any;
   retrieveResonse: any;
-  private baseUrl = 'https://digital-org.herokuapp.com//card/';
+  private baseUrl = 'https://digital-org.herokuapp.com/card/';
 
   constructor(private cardService: CardServiceService,
               private dataService: DataService,
@@ -97,7 +97,7 @@ export class CardListComponent implements OnInit {
   // tslint:disable-next-line:typedef
   getImage(id: number) {
     //Make a call to Sprinf Boot to get the Image Bytes.
-    this.httpClient.get('https://digital-org.herokuapp.com//card/download-octa/' + id)
+    this.httpClient.get('https://digital-org.herokuapp.com/card/download-octa/' + id)
       .subscribe(
     res => {
       this.retrieveResonse = res;
