@@ -1,23 +1,8 @@
-dist: trusty
-sudo: false
-
 language: node_js
+sudo: false
 node_js:
-  - '14'
-
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
-
-cache:
-  directories:
-    - ./node_modules
-
+  - 14
 install:
-  - npm install
-
+  - cd digital-org-ui && npm install && cd ..
 script:
-  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - cd digital-org-ui && npm test
