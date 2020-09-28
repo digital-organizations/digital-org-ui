@@ -8,8 +8,6 @@ branches:
     - master
 before_script:
   - npm install -g @angular/cli
-script:
-  - npm run-script build
 deploy:
   provider: pages
   skip_cleanup: true
