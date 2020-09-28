@@ -8,10 +8,10 @@ branches:
     - master
 before_script:
   - npm install -g @angular/cli
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist/digital-org-ui
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN
+#  local_dir: dist/digital-org-ui
+#  on:
+#    branch: master
